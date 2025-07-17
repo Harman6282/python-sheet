@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Complete Python Roadmap: From Novice to Expert</title>
+    <style>
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            margin-bottom: 40px;
+            font-size: x-large;
+        }
+        
+        .section-header {
+            margin-bottom: 20px;
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 10px;
+            font-size: large;
+            color: #333;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .topic-group {
+            margin-bottom: 30px;
+            padding-bottom: 10px;
+            padding-left: 20px;
+        }
+
+        .topic-items {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            align-items: flex-start;
+        }
+        .checkbox-item {
+            display: flex;
+            align-items: center;
+            min-width: 220px;
+            margin-bottom: 0;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 900px) {
+            .container {
+                max-width: 100%;
+                padding: 15px;
+            }
+            .header {
+                font-size: large;
+            }
+            .section-header {
+                font-size: medium;
+            }
+            .topic-group {
+                padding-left: 10px;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 8px;
+            }
+            .header {
+                font-size: medium;
+                text-align: center;
+            }
+            .section-header {
+                font-size: small;
+                padding-bottom: 6px;
+            }
+            .topic-group {
+                padding-left: 0;
+                margin-bottom: 20px;
+            }
+            .topic-items {
+                flex-direction: column;
+                gap: 8px;
+            }
+            .checkbox-item {
+                min-width: 0;
+            }
+            .main-content {
+                padding: 0;
+            }
+        }
+
+        @media (max-width: 400px) {
+            .header h1 {
+                font-size: 1.2em;
+            }
+            .section-header h2 {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>🐍 The Complete Python Roadmap</h1>
+            <p class="subtitle">From Novice to Expert</p>
+            <div class="progress-overview">
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progressFill"></div>
+                </div>
+                <span class="progress-text" id="progressText">0% Complete</span>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <section class="roadmap-section">
+                <div class="section-header">
+                    <h2>🎯 Part 1: Core Python - The Foundation (Beginner)</h2>
+                    <p>This section covers the fundamental concepts that every Python programmer must know.</p>
+                </div>
+
+                <div class="topic-group">
+                    <h3>1. Getting Started</h3>
+                    <div class="topic-items">
+                        <label class="checkbox-item">
+                            <input type="checkbox" data-topic="getting-started-1">
+                            <span class="checkmark"></span>
+                            What is Python?
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" data-topic="getting-started-2">
+                            <span class="checkmark"></span>
+                            Why Python?
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" data-topic="getting-started-3">
+                            <span class="checkmark"></span>
+                            Setting up Development Environment (Installing Python, VS Code/PyCharm)
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" data-topic="getting-started-4">
+                            <span class="checkmark"></span>
+                            Using the Python Interpreter
+                        </label>
+                    </div>
+                </div>
+
+                <div class="topic-group">
+                    <h3>2. Python Syntax and Basics</h3>
+                    <div class="topic-items">
+                        <label class="checkbox-item">
+                            <input type="checkbox" data-topic="syntax-1">
+                            <span class="checkmark"></span>
+                            Your First Program (Hello, World!)
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" data-topic="syntax-2">
+                            <span class="checkmark"></span>
+                            Variables
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" data-topic="syntax-3">
+                            <span class="checkmark"></span>
+                            Comments
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" data-topic="syntax-4">
+                            <span class="checkmark"></span>
+                            Keywords
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" data-topic="syntax-5">
+                            <span class="checkmark"></span>
+                            Reading User Input
+                        </label>
+                    </div>
+                </div>
+
+                <div class="topic-group">
+                    <h3>3. Data Types</h3>
+                    <div class="topic-items">
+                        <label class="checkbox-item">
+                            <input type="checkbox" data-topic="datatypes-1">
+                            <span class="checkmark"></span>
+                            Strings
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" data-topic="datatypes-2">
+                            <span class="checkmark"></span>
+                            Integers
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" data-topic="datatypes-3">
+                            <span class="checkmark"></span>
+                            Floats
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" data-topic="datatypes-4">
+                            <span class="checkmark"></span>
+                            Booleans
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" data-topic="datatypes-5">
+                            <span class="checkmark"></span>
+                            Type Casting
+                        </label>
+                    </div>
+                </div>
+
+                <div class="topic-group">
+                    <h3>4. Basic Operators</h3>
+                    <div class="topic-items">
+                        <label class="checkbox-item">
+                            <input type="checkbox" data-topic="operators-1">
+                            <span class="checkmark"></span>
+                            Arithmetic (+, -, *, /, %, **, //)
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" data-topic="operators-2">
+                            <span class="checkmark"></span>
+                            Comparison (==, !=, >, <, >=, <=)
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" data-topic="operators-3">
+                            <span class="checkmark"></span>
+                            Logical (and, or, not)
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" data-topic="operators-4">
+                            <span class="checkmark"></span>
+                            Assignment Operators
+                        </label>
+                    </div>
+                </div>
+
+                <div class="topic-group">
+                    <h3>5. Core Data Structures</h3>
+                    <div class="topic-items">
+                        <label class="checkbox-item">
+                            <input type="checkbox" data-topic="datastructures-1">
+                            <span class="checkmark"></span>
+                            Lists: Creating, indexing, slicing
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" data-topic="datastructures-2">
+                            <span class="checkmark"></span>
+                            List methods (append, insert, pop, remove, sort)
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" data-topic="datastructures-3">
+                            <span class="checkmark"></span>
+                            Tuples: Immutable lists, creation, indexing
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" data-topic="datastructures-4">
+                            <span class="checkmark"></span>
+                            Dictionaries: Key-value pairs, creating, accessing, modifying
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" data-topic="datastructures-5">
+                            <span class="checkmark"></span>
+                            Dictionary methods (keys, values, items)
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" data-topic="datastructures-6">
+                            <span class="checkmark"></span>
+                            Sets: Unordered, unique elements, set operations
+                        </label>
+                    </div>
+                </div>
+
+                <div class="topic-group">
+                    <h3>6. Control Flow</h3>
+                    <div class="topic-items">
+                        <label class="checkbox-item">
+                            <input type="checkbox" data-topic="controlflow-1">
+                            <span class="checkmark"></span>
+                            Conditional Statements: if, elif, else
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" data-topic="controlflow-2">
+                            <span class="checkmark"></span>
+                            For loops (with range)
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" data-topic="controlflow-3">
+                            <span class="checkmark"></span>
+                            While loops
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" data-topic="controlflow-4">
+                            <span class="checkmark"></span>
+                            Loop Control: break, continue, pass
+                        </label>
+                    </div>
+                </div>
+
+                <div class="topic-group">
+                    <h3>7. Functions</h3>
+                    <div class="topic-items">
+                        <label class="checkbox-item">
+                            <input type="checkbox" data-topic="functions-1">
+                            <span class="checkmark"></span>
+                            Defining functions (def)
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" data-topic="functions-2">
+                            <span class="checkmark"></span>
+                            Arguments and parameters
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" data-topic="functions-3">
+                            <span class="checkmark"></span>
+                            Default arguments
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" data-topic="functions-4">
+                            <span class="checkmark"></span>
+                            Keyword arguments
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" data-topic="functions-5">
+                            <span class="checkmark"></span>
+                            *args and **kwargs
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" data-topic="functions-6">
+                            <span class="checkmark"></span>
+                            Return statement
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" data-topic="functions-7">
+                            <span class="checkmark"></span>
+                            Variable scope (Local vs. Global)
+                        </label>
+                    </div>
+                </div>
+
+                <div class="topic-group">
+                    <h3>8. String Manipulation</h3>
+                    <div class="topic-items">
+                        <label class="checkbox-item">
+                            <input type="checkbox" data-topic="strings-1">
+                            <span class="checkmark"></span>
+                            Slicing
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" data-topic="strings-2">
+                            <span class="checkmark"></span>
+                            Concatenation
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" data-topic="strings-3">
+                            <span class="checkmark"></span>
+                            Formatting (f-strings)
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" data-topic="strings-4">
+                            <span class="checkmark"></span>
+                            Common methods (.upper(), .lower(), .strip(), .split(), .join(), .replace())
+                        </label>
+                    </div>
+                </div>
+
+                <div class="topic-group">
+                    <h3>9. File Handling</h3>
+                    <div class="topic-items">
+                        <label class="checkbox-item">
+                            <input type="checkbox" data-topic="files-1">
+                            <span class="checkmark"></span>
+                            Reading from files (.txt, .csv)
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" data-topic="files-2">
+                            <span class="checkmark"></span>
+                            Writing and appending to files
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" data-topic="files-3">
+                            <span class="checkmark"></span>
+                            Using the with statement
+                        </label>
+                    </div>
+                </div>
+
+                <div class="topic-group">
+                    <h3>10. Error and Exception Handling</h3>
+                    <div class="topic-items">
+                        <label class="checkbox-item">
+                            <input type="checkbox" data-topic="exceptions-1">
+                            <span class="checkmark"></span>
+                            Understanding exceptions
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" data-topic="exceptions-2">
+                            <span class="checkmark"></span>
+                            try...except blocks
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" data-topic="exceptions-3">
+                            <span class="checkmark"></span>
+                            else and finally clauses
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" data-topic="exceptions-4">
+                            <span class="checkmark"></span>
+                            Raising exceptions
+                        </label>
+                    </div>
+                </div>
+
+                <div class="topic-group">
+                    <h3>11. Modules and Packages</h3>
+                    <div class="topic-items">
+                        <label class="checkbox-item">
+                            <input type="checkbox" data-topic="modules-1">
+                            <span class="checkmark"></span>
+                            Importing modules (math, random, datetime)
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" data-topic="modules-2">
+                            <span class="checkmark"></span>
+                            Understanding pip to install third-party packages
+                        </label>
+                    </div>
+                </div>
+            </section>
+
+            <section class="roadmap-section">
+                <div class="section-header">
+                    <h2>🚀 Part 2: Intermediate Python</h2>
+                    <p>Build upon your foundation with more complex and powerful features of the language.</p>
+                </div>
+
+                <div class="topic-group">
+                    <h3>1. Advanced Data Structures</h3>
+                    <div class="topic-items">
+                        <label class="checkbox-item">
+                            <input type="checkbox" data-topic="advanced-ds-1">
+                            <span class="checkmark"></span>
+                            List Comprehensions
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" data-topic="advanced-ds-2">
+                            <span class="checkmark"></span>
+                            Dictionary Comprehensions
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" data-topic="advanced-ds-3">
+                            <span class="checkmark"></span>
+                            collections module (Counter, defaultdict, namedtuple)
+                        </label>
+                    </div>
+                </div>
+
+                <div class="topic-group">
+                    <h3>2. Object-Oriented Programming (OOP)</h3>
+                    <div class="topic-items">
+                        <label class="checkbox-item">
+                            <input type="checkbox" data-topic="oop-1">
+                            <span class="checkmark"></span>
+                            Classes and Objects: The class keyword, creating instances
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" data-topic="oop-2">
+                            <span class="checkmark"></span>
+                            Core Principles: Inheritance
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" data-topic="oop-3">
+                            <span class="checkmark"></span>
+                            Core Principles: Encapsulation
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" data-topic="oop-4">
+                            <span class="checkmark"></span>
+                            Core Principles: Polymorphism
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" data-topic="oop-5">
+                            <span class="checkmark"></span>
+                            Dunder Methods: __init__, __str__, __repr__, __len__
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" data-topic="oop-6">
+                            <span class="checkmark"></span>
+                            Class and Static Methods: @classmethod, @staticmethod
+                        </label>
+                    </div>
+                </div>
+
+                <div class="topic-group">
+                    <h3>3. Functional Programming Concepts</h3>
+                    <div class="topic-items">
+                        <label class="checkbox-item">
+                            <input type="checkbox" data-topic="functional-1">
+                            <span class="checkmark"></span>
+                            Lambda Functions
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" data-topic="functional-2">
+                            <span class="checkmark"></span>
+                            map()
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" data-topic="functional-3">
+                            <span class="checkmark"></span>
+                            filter()
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" data-topic="functional-4">
+                            <span class="checkmark"></span>
+                            reduce()
+                        </label>
+                    </div>
+                </div>
+
+                <div class="topic-group">
+                    <h3>4. Decorators and Generators</h3>
+                    <div class="topic-items">
+                        <label class="checkbox-item">
+                            <input type="checkbox" data-topic="decorators-1">
+                            <span class="checkmark"></span>
+                            Understanding and creating decorators
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" data-topic="decorators-2">
+                            <span class="checkmark"></span>
+                            yield keyword
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" data-topic="decorators-3">
+                            <span class="checkmark"></span>
+                            Creating generators for memory efficiency
+                        </label>
+                    </div>
+                </div>
+
+                <div class="topic-group">
+                    <h3>5. Working with Popular Libraries</h3>
+                    <div class="topic-items">
+                        <label class="checkbox-item">
+                            <input type="checkbox" data-topic="libraries-1">
+                            <span class="checkmark"></span>
+                            NumPy: For high-performance numerical computing and array manipulation
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" data-topic="libraries-2">
+                            <span class="checkmark"></span>
+                            Pandas: For data analysis and manipulation (DataFrames and Series)
+                        </label>
+                    </div>
+                </div>
+
+                <div class="topic-group">
+                    <h3>6. Project Management Tools</h3>
+                    <div class="topic-items">
+                        <label class="checkbox-item">
+                            <input type="checkbox" data-topic="project-1">
+                            <span class="checkmark"></span>
+                            Virtual Environments: Using venv to manage project dependencies
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" data-topic="project-2">
+                            <span class="checkmark"></span>
+                            Version Control: Basics of Git and using GitHub (clone, commit, push, pull)
+                        </label>
+                    </div>
+                </div>
+            </section>
+
+            <section class="roadmap-section">
+                <div class="section-header">
+                    <h2>⚡ Part 3: Advanced Python</h2>
+                    <p>Dive deep into the intricacies of Python for building robust and high-performance applications.</p>
+                </div>
+
+                <div class="topic-group">
+                    <h3>1. Advanced OOP</h3>
+                    <div class="topic-items">
+                        <label class="checkbox-item">
+                            <input type="checkbox" data-topic="advanced-oop-1">
+                            <span class="checkmark"></span>
+                            Metaclasses
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" data-topic="advanced-oop-2">
+                            <span class="checkmark"></span>
+                            Abstract Base Classes (ABCs)
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" data-topic="advanced-oop-3">
+                            <span class="checkmark"></span>
+                            Descriptors
+                        </label>
+                    </div>
+                </div>
+
+                <div class="topic-group">
+                    <h3>2. Concurrency and Parallelism</h3>
+                    <div class="topic-items">
+                        <label class="checkbox-item">
+                            <input type="checkbox" data-topic="concurrency-1">
+                            <span class="checkmark"></span>
+                            Threading: For I/O-bound tasks
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" data-topic="concurrency-2">
+                            <span class="checkmark"></span>
+                            Multiprocessing: For CPU-bound tasks
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" data-topic="concurrency-3">
+                            <span class="checkmark"></span>
+                            Asyncio: Asynchronous programming with async and await
+                        </label>
+                    </div>
+                </div>
+
+                <div class="topic-group">
+                    <h3>3. Testing</h3>
+                    <div class="topic-items">
+                        <label class="checkbox-item">
+                            <input type="checkbox" data-topic="testing-1">
+                            <span class="checkmark"></span>
+                            unittest module
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" data-topic="testing-2">
+                            <span class="checkmark"></span>
+                            pytest framework
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" data-topic="testing-3">
+                            <span class="checkmark"></span>
+                            Test-Driven Development (TDD)
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" data-topic="testing-4">
+                            <span class="checkmark"></span>
+                            Mocking
+                        </label>
+                    </div>
+                </div>
+
+                <div class="topic-group">
+                    <h3>4. Packaging and Distribution</h3>
+                    <div class="topic-items">
+                        <label class="checkbox-item">
+                            <input type="checkbox" data-topic="packaging-1">
+                            <span class="checkmark"></span>
+                            Creating distributable Python packages using setuptools and pyproject.toml
+                        </label>
+                    </div>
+                </div>
+
+                <div class="topic-group">
+                    <h3>5. Performance and Optimization</h3>
+                    <div class="topic-items">
+                        <label class="checkbox-item">
+                            <input type="checkbox" data-topic="performance-1">
+                            <span class="checkmark"></span>
+                            Code profiling (cProfile)
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" data-topic="performance-2">
+                            <span class="checkmark"></span>
+                            Understanding the Global Interpreter Lock (GIL)
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" data-topic="performance-3">
+                            <span class="checkmark"></span>
+                            Using Cython or Numba for performance boosts
+                        </label>
+                    </div>
+                </div>
+
+                <div class="topic-group">
+                    <h3>6. Common Design Patterns</h3>
+                    <div class="topic-items">
+                        <label class="checkbox-item">
+                            <input type="checkbox" data-topic="patterns-1">
+                            <span class="checkmark"></span>
+                            Singleton
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" data-topic="patterns-2">
+                            <span class="checkmark"></span>
+                            Factory
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" data-topic="patterns-3">
+                            <span class="checkmark"></span>
+                            Observer
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" data-topic="patterns-4">
+                            <span class="checkmark"></span>
+                            Decorator
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" data-topic="patterns-5">
+                            <span class="checkmark"></span>
+                            Strategy
+                        </label>
+                    </div>
+                </div>
+            </section>
+
+            <section class="roadmap-section">
+                <div class="section-header">
+                    <h2>🎯 Part 4: Specializations (Choose Your Path)</h2>
+                    <p>Once you have a strong command of Python, you can specialize in a field that interests you.</p>
+                </div>
+
+                <div class="topic-group">
+                    <h3>1. Web Development</h3>
+                    <div class="topic-items">
+                        <label class="checkbox-item">
+                            <input type="checkbox" data-topic="web-1">
+                            <span class="checkmark"></span>
+                            Frameworks: Django (full-featured)
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" data-topic="web-2">
+                            <span class="checkmark"></span>
+                            Frameworks: Flask (micro-framework)
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" data-topic="web-3">
+                            <span class="checkmark"></span>
+                            Frameworks: FastAPI (modern, high-performance)
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" data-topic="web-4">
+                            <span class="checkmark"></span>
+                            Concepts: APIs, REST, ORMs (Object-Relational Mapping), Templating
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" data-topic="web-5">
+                            <span class="checkmark"></span>
+                            Databases: SQL (PostgreSQL, MySQL)
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" data-topic="web-6">
+                            <span class="checkmark"></span>
+                            Databases: NoSQL (MongoDB)
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" data-topic="web-7">
+                            <span class="checkmark"></span>
+                            Deployment: Docker, Nginx/Gunicorn, Cloud Platforms (AWS, Azure, Heroku)
+                        </label>
+                    </div>
+                </div>
+
+                <div class="topic-group">
+                    <h3>2. Data Science & Machine Learning</h3>
+                    <div class="topic-items">
+                        <label class="checkbox-item">
+                            <input type="checkbox" data-topic="datascience-1">
+                            <span class="checkmark"></span>
+                            Data Visualization: Matplotlib, Seaborn, Plotly
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" data-topic="datascience-2">
+                            <span class="checkmark"></span>
+                            Machine Learning: Scikit-learn (for classical ML models)
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" data-topic="datascience-3">
+                            <span class="checkmark"></span>
+                            Deep Learning: TensorFlow, PyTorch
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" data-topic="datascience-4">
+                            <span class="checkmark"></span>
+                            Big Data: Apache Spark (with PySpark)
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" data-topic="datascience-5">
+                            <span class="checkmark"></span>
+                            Essential Math: Linear Algebra, Calculus, Statistics, and Probability
+                        </label>
+                    </div>
+                </div>
+
+                <div class="topic-group">
+                    <h3>3. Automation & DevOps</h3>
+                    <div class="topic-items">
+                        <label class="checkbox-item">
+                            <input type="checkbox" data-topic="automation-1">
+                            <span class="checkmark"></span>
+                            Libraries: os, sys, subprocess, shutil
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" data-topic="automation-2">
+                            <span class="checkmark"></span>
+                            Tools: Ansible, Fabric, SaltStack for infrastructure automation
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" data-topic="automation-3">
+                            <span class="checkmark"></span>
+                            Concepts: CI/CD (Continuous Integration/Continuous Deployment)
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" data-topic="automation-4">
+                            <span class="checkmark"></span>
+                            Scripting for cloud services
+                        </label>
+                    </div>
+                </div>
+
+                <div class="topic-group">
+                    <h3>4. GUI (Desktop Applications)</h3>
+                    <div class="topic-items">
+                        <label class="checkbox-item">
+                            <input type="checkbox" data-topic="gui-1">
+                            <span class="checkmark"></span>
+                            Frameworks: Tkinter (built-in)
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" data-topic="gui-2">
+                            <span class="checkmark"></span>
+                            Frameworks: PyQt
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" data-topic="gui-3">
+                            <span class="checkmark"></span>
+                            Frameworks: Kivy (cross-platform)
+                        </label>
+                    </div>
+                </div>
+
+                <div class="topic-group">
+                    <h3>5. Cybersecurity</h3>
+                    <div class="topic-items">
+                        <label class="checkbox-item">
+                            <input type="checkbox" data-topic="security-1">
+                            <span class="checkmark"></span>
+                            Libraries: Scapy (packet crafting)
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" data-topic="security-2">
+                            <span class="checkmark"></span>
+                            Libraries: Requests (web interaction)
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" data-topic="security-3">
+                            <span class="checkmark"></span>
+                            Libraries: Nmap (network scanning)
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" data-topic="security-4">
+                            <span class="checkmark"></span>
+                            Concepts: Penetration testing, malware analysis, security scripting
+                        </label>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>🐍 Keep coding and never stop learning! Your Python journey awaits.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
